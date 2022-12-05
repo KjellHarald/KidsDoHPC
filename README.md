@@ -14,4 +14,7 @@ That is routed over two diffirent NICs from Internal to External Connection. Thi
 As Guardian can only communicate outbound traffic to HTTP/HTTPS Requests. They are easily filtered by protocool. And can be **strictly** byte forced.
 
 Node -------> Controller (strict byte check) -----> E.g: https://wikipedia.org/
+
+Guardian will return information from wikipedia.org **only** if byte check is validated. And wikipedia.org is a whitelisted resource.
+
 Node <------- Controller <------------------- Result
