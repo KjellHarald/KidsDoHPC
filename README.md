@@ -1,6 +1,10 @@
 # KidsDoHPC
 
+## Dashboard
+
+
 ## API
+
 
 ## Outbound Security
 
@@ -8,3 +12,6 @@
 That is routed over two diffirent NICs from Internal to External Connection. This also gives "network" connectivity to all compute nodes.
 
 As Guardian can only communicate outbound traffic to HTTP/HTTPS Requests. They are easily filtered by protocool. And can be **strictly** byte forced.
+
+Node -------> Controller (strict byte check) -----> E.g: https://wikipedia.org/
+Node <------- Controller <------------------- Result
