@@ -55,6 +55,8 @@ While *timeout* is the most common reason for *empty returns*, it's not the only
 
 - Code Error(s) and Code Spelling Mistakes.
 
+- If code takes to long a "Gateway Time-out" will appear.
+
 ## Outbound Security
 
 **Guardian** ensure outbound security, by forcing outbound connections over an HTTP API.
