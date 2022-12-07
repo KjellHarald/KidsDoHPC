@@ -39,7 +39,7 @@ print(r)
 
 Open API
 
-```
+```python
 import requests
 
 data = {'rpy': 'print(7 * 7)'}
