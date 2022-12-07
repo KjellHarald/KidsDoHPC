@@ -18,6 +18,7 @@ code = "print(7 * 7)"
 
 data = {'username':'name', 'password': '****', 'rpy-submit':'true', 'rpy': code, 'rpy-exec':'true'}
 r = requests.post('https://kidsdohpc.org/api/', data=data).text
+print(r)
 ```
 
 Will return "49"
