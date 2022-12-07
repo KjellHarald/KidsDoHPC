@@ -26,11 +26,23 @@ https://kidsdohpc.org/api/open/
 ## Execute Python over API
 The Kids Do HPC API allows Python Code to be executed on compute node(s).
 
+Default API
+
 ```python
 import requests
 code = "print(7 * 7)"
 
 data = {'username':'name', 'password': '****', 'rpy-submit':'true', 'rpy': code, 'rpy-exec':'true'}
+r = requests.post('https://kidsdohpc.org/api/', data=data).text
+print(r)
+```
+
+Open API
+
+```
+import requests
+
+data = {'rpy': 'print(7 * 7)'}
 r = requests.post('https://kidsdohpc.org/api/', data=data).text
 print(r)
 ```
