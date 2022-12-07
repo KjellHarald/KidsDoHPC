@@ -11,6 +11,17 @@ Website: https://kidsdohpc.org/
 
 ## API
 
+Default: 
+
+```
+https://kidsdohpc.org/api/
+```
+
+Open:
+
+```
+https://kidsdohpc.org/api/open/
+```
 
 ## Execute Python over API
 The Kids Do HPC API allows Python Code to be executed on compute node(s).
