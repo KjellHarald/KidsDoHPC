@@ -17,6 +17,8 @@ data = {'rpy': code}
 r = requests.post('https://kidsdohpc.org/api/', data=data).text
 ```
 
+Will return "49"
+
 ### Code Examples
 As the API recieves code as a string, it's very important to format this correctly. Unless rpy-file is used. When writing *code* as a string in python we need to utilize escaped characters.
 
