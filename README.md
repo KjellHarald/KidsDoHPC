@@ -78,7 +78,7 @@ Example Code String
 code = "import requests\ndata = {'guard': 'https://kidsdohpc.org/'}\nr = requests.post('http://10.0.1.19/', data=data).text\nprint(r)"
 ```
 
-**Note:** The IP to **Guardian** may change. The current IP should always exist in */opt/kidsdohpc/guard*. To use it your code can utilize:
+**Note:** The IP to **Guardian** may change. The current IP should always exist in */opt/kidsdohpc/guard*. To use it your code use:
 
 ```python
 open('/opt/kidsdohpc/guard', 'r').read()
