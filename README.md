@@ -43,7 +43,7 @@ Open API
 import requests
 
 data = {'rpy': 'print(7 * 7)'}
-r = requests.post('https://kidsdohpc.org/api/', data=data).text
+r = requests.post('https://kidsdohpc.org/api/open/', data=data).text
 print(r)
 ```
 
