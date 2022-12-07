@@ -7,7 +7,10 @@ Website: https://kidsdohpc.org/
 ## Dashboard
 
 
+**Note:** There is absolutely no need to use the Dashboard if API is prefered.
+
 ## API
+
 
 ## Execute Python over API
 The Kids Do HPC API allows Python Code to be executed on compute node(s).
