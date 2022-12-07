@@ -13,7 +13,7 @@ The Kids Do HPC API allows Python Code to be executed on compute node(s).
 import requests
 code = "print(7 * 7)"
 
-data = {'username':'name', 'password': '****', 'rpy-submit':'true','rpy': code, 'rpy-exec':'true'}
+data = {'username':'name', 'password': '****', 'rpy-submit':'true', 'rpy': code, 'rpy-exec':'true'}
 r = requests.post('https://kidsdohpc.org/api/', data=data).text
 ```
 
@@ -59,6 +59,12 @@ While *timeout* is the most common reason for *empty returns*, it's not the only
 
 **Guardian** ensure outbound security, by forcing outbound connections over an HTTP API.
 That is routed over two diffirent NICs from Internal to External Connection. This also gives "network" connectivity to all compute nodes.
+
+When using our API with *rpy-exec* it's possible to use **Guardian** to connnect to external HTTP servers, even when the *node* is not connected to the internet.
+
+```
+import requests\nrequests.get(url)
+```
 
 As Guardian can only communicate outbound traffic to HTTP/HTTPS Requests. They are easily filtered by protocool. And can be **strictly** byte forced.
 
