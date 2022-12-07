@@ -12,7 +12,7 @@ Website: https://kidsdohpc.org/
 ## Execute Python over API
 The Kids Do HPC API allows Python Code to be executed on compute node(s).
 
-```
+```python
 import requests
 code = "print(7 * 7)"
 
@@ -25,19 +25,19 @@ Will return "49"
 ### Code Examples
 As the API recieves code as a string, it's very important to format this correctly. Unless rpy-file is used. When writing *code* as a string in python we need to utilize escaped characters.
 
-```
+```python
 code = "from os import system\nprint(system('whoami'))"
 ```
 
 **Notice** the "\n" in the *code* above. This means "new line". In some cases an indent is also required. And this is when using *rpy-file* will become alot easier than *rpy*.
 
-```
+```python
 code = "for i in range(10):\n\ttprint(i)"
 ```
 
 This will become the same as:
 
-```
+```python
 for i in range(10):
     print(i)
 ```
@@ -67,8 +67,8 @@ That is routed over two diffirent NICs from Internal to External Connection. Thi
 
 When using our API with *rpy-exec* it's possible to use **Guardian** to connnect to external HTTP servers, even when the *node* is not connected to the internet.
 
-```
-import requests\nrequests.get(url)
+```python
+code = "import requests\nrequests.get(url)"
 ```
 
 Example Code String
