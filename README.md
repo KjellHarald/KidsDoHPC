@@ -71,6 +71,12 @@ When using our API with *rpy-exec* it's possible to use **Guardian** to connnect
 import requests\nrequests.get(url)
 ```
 
+Example Code String
+
+```python
+code = "import requests\ndata = {'guard': 'https://kidsdohpc.org/'}\nr = requests.post('http://10.0.1.19/', data=data).text\nprint(r)"
+```
+
 As Guardian can only communicate outbound traffic to HTTP/HTTPS Requests. They are easily filtered by protocool. And can be **strictly** byte forced.
 
 Node -------> Controller (strict byte check) -----> E.g: https://wikipedia.org/
