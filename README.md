@@ -78,6 +78,14 @@ Example Code String
 code = "import requests\ndata = {'guard': 'https://kidsdohpc.org/'}\nr = requests.post('http://10.0.1.19/', data=data).text\nprint(r)"
 ```
 
+**Note:** The IP to **Guardian** may change. The current IP should always exist in */opt/kidsdohpc/guard*. To use it your code can utilize:
+
+```python
+open('/opt/kidsdohpc/guard', 'r').read()
+```
+
+Instead of writing the IP manually.
+
 As Guardian can only communicate outbound traffic to HTTP/HTTPS Requests. They are easily filtered by protocool. And can be **strictly** byte forced.
 
 Node -------> Controller (strict byte check) -----> E.g: https://wikipedia.org/
