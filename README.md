@@ -13,7 +13,7 @@ The Kids Do HPC API allows Python Code to be executed on compute node(s).
 import requests
 code = "print(7 * 7)"
 
-data = {'rpy': code}
+data = {'username':'name', 'password': '****', 'rpy-submit':'true','rpy': code, 'rpy-exec':'true'}
 r = requests.post('https://kidsdohpc.org/api/', data=data).text
 ```
 
