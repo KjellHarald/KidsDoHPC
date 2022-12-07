@@ -1,5 +1,8 @@
 # KidsDoHPC
-https://github.com/KidsDoHPC/
+
+Github URL: https://github.com/KidsDoHPC/
+
+Website: https://kidsdohpc.org/
 
 ## Dashboard
 
