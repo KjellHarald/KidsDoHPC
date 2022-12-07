@@ -33,7 +33,7 @@ code = "from os import system\nprint(system('whoami'))"
 **Notice** the "\n" in the *code* above. This means "new line". In some cases an indent is also required. And this is when using *rpy-file* will become alot easier than *rpy*.
 
 ```python
-code = "for i in range(10):\n\ttprint(i)"
+code = "for i in range(10):\n\tprint(i)"
 ```
 
 This will become the same as:
