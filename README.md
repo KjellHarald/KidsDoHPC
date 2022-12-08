@@ -6,6 +6,9 @@ Website: https://kidsdohpc.org/
 
 ## Dashboard
 
+Kids Do HPC is an API-First system, as the dive into APIs is **not** ideal for beginners.
+We've developed a Dashboard, with the goal that it should be extremely simple to use.
+But also offer similar functionallity to enterprise dashboards.
 
 **Note:** There is absolutely no need to use the Dashboard if API is prefered.
 
@@ -45,6 +48,18 @@ import requests
 data = {'rpy': 'print(7 * 7)'}
 r = requests.post('https://kidsdohpc.org/api/open/', data=data).text
 print(r)
+```
+
+rpy-file **now** available on open API! Use the cose below to "deploy" your code file as payload.
+
+```python
+import requests
+
+data = {'rpy-file': open('/path/test.py', 'rb')}
+
+api_call = requests.post('https://kidsdohpc.org/api/open/', data=data)
+print(api_call.text)
+
 ```
 
 Will return "49"
@@ -119,3 +134,15 @@ Node -------> Controller (strict byte check) -----> E.g: https://wikipedia.org/
 Guardian will return information from wikipedia.org **only** if byte check is validated. And wikipedia.org is a whitelisted resource.
 
 Node <------- Controller <------------------- Result
+
+# Authentication
+
+As laws are very strict about gathering information, it's decided that Kids Do HPC will use username/password authentication.
+
+While username/password authentication present their own issues. It also gives the best possible transparancy.
+
+## A word about Transparancy
+
+Trasparancy is extremely important for Kids Do HPC to work for the public interest.
+And while there are challenges when it comes to transparancy around how our systems work.
+We do our best to explain very detailed how these systems work, without exposing possible security issues.
