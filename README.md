@@ -50,6 +50,8 @@ r = requests.post('https://kidsdohpc.org/api/open/', data=data).text
 print(r)
 ```
 
+Will return "49"
+
 rpy-file **now** available on open API! Use the cose below to "deploy" your code file as payload.
 
 ```python
@@ -62,7 +64,6 @@ print(api_call.text)
 
 ```
 
-Will return "49"
 
 ### Code Examples
 As the API recieves code as a string, it's very important to format this correctly. Unless rpy-file is used. When writing *code* as a string in python we need to utilize escaped characters.
