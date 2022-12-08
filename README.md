@@ -59,7 +59,7 @@ import requests
 
 data = {'rpy-file': open('/path/test.py', 'rb')}
 
-api_call = requests.post('https://kidsdohpc.org/api/open/', data=data)
+api_call = requests.post('https://kidsdohpc.org/api/open/', files=data)
 print(api_call.text)
 
 ```
