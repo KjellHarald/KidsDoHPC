@@ -28,8 +28,9 @@ https://kidsdohpc.org/api/open/
 
 ## Execute Python over API
 The Kids Do HPC API allows Python Code to be executed on compute node(s).
+Code may be written in two ways, as a *string* or as a regulare file, using file payload.
 
-Default API
+**Default API**
 
 ```python
 import requests
@@ -40,7 +41,7 @@ r = requests.post('https://kidsdohpc.org/api/', data=data).text
 print(r)
 ```
 
-Open API
+**Open API** 
 
 ```python
 import requests
@@ -63,7 +64,6 @@ api_call = requests.post('https://kidsdohpc.org/api/open/', files=data)
 print(api_call.text)
 
 ```
-
 
 ### Code Examples
 As the API recieves code as a string, it's very important to format this correctly. Unless rpy-file is used. When writing *code* as a string in python we need to utilize escaped characters.
